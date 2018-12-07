@@ -4,11 +4,14 @@ channels:
     - astropy
 
 dependencies:
-    - python>=3.6
+    - python>=2.7
     - astropy
-    - Cython
     - matplotlib
     - numpy
     - sphinx-astropy
+    - synphot
+    - requests
+    - pyyaml
+
 #   - pip:
 #       - dependency_from_pip

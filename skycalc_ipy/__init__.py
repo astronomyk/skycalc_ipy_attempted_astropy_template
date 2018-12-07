@@ -20,4 +20,13 @@ if sys.version_info < tuple((int(val) for val in __minimum_python_version__.spli
 
 if not _ASTROPY_SETUP_:
     # For egg_info test builds to pass, put package imports here.
-    from .example_mod import *
+
+    import warnings as _warnings
+    from astropy.utils.exceptions import AstropyWarning as _AstropyWarning
+
+    _warnings.simplefilter('ignore', category=_AstropyWarning)
+
+    from . import ui
+    from . import core
+
+    from .ui import SkyCalc
