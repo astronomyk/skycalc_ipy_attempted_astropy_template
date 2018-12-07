@@ -4,6 +4,8 @@
 *.o
 *.so
 __pycache__
+*$py.class
+.pytest_cache/
 
 # Ignore .c files by default to avoid including generated code. If you want to
 # add a non-generated .c extension, use `git add -f filename.c`.
@@ -58,3 +60,19 @@ distribute-*.tar.gz
 
 # Mac OSX
 .DS_Store
+
+# IPython Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# virtualenv
+.venv/
+venv/
+ENV/
+
+# Generics
+not-included/
+dist/
+*.fits
